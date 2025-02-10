@@ -115,8 +115,8 @@ function logMessage(message, type = 'system') {
     logEntry.appendChild(emoji);
 
     const messageText = document.createElement('span');
-    messageText.textContent = message;
-    logEntry.appendChild(messageText.replace(/\n/g, '<br/>')); 
+    messageText.textContent = message.replace(/\n/g, '<br/>');
+    logEntry.appendChild(messageText); 
 
     logsContainer.appendChild(logEntry);
     logsContainer.scrollTop = logsContainer.scrollHeight;
