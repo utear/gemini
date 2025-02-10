@@ -116,7 +116,8 @@ function logMessage(message, type = 'system') {
 
     const messageText = document.createElement('span');
     messageText.textContent = message;
-    logEntry.appendChild(messageText);
+    # logEntry.appendChild(messageText);
+	logEntry.innerHTML = messageTxt.txtContent;
 
     logsContainer.appendChild(logEntry);
     logsContainer.scrollTop = logsContainer.scrollHeight;
